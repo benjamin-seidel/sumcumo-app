@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" ng-click="showMobileNav = !showMobileNav">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" ui-sref="greeting">
+            <img src="images/logo_blue_bseidel.png" alt="">
+        </a>
+    </div>
+    <div class="collapse navbar-collapse" ng-class="{in: showMobileNav}">
+        <ul class="nav navbar-nav">
+            <li ng-repeat="menuItem in ctrl.menuItems | orderBy:'order'" ui-sref-active="active">
+                <a href ui-sref="{{menuItem.name}}">{{ menuItem.title }}</a>
+            </li>
+        </ul>
+    </div>
+</nav>

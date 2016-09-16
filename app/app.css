@@ -1,0 +1,160 @@
+/* Coloring */
+body {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sumcum-app h1 {
+  text-transform: uppercase;
+  color: #00567d;
+  font-weight: bold;
+}
+
+.sumcum-app h3 {
+  color: #00567d;
+}
+
+.sumcum-app h4 {
+  color: #00567d;
+}
+
+.sumcum-app .divider-vert {
+  border-left-width: 2px;
+  border-left-color: #00567d;
+  border-left-style: solid;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.footer .text-muted {
+  color: #00567d;
+}
+
+code {
+  font-size: 80%;
+}
+
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+/**********************************
+Responsive navbar-brand image CSS
+- Remove navbar-brand padding for firefox bug workaround
+- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+***********************************/
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+/* Custom stylings */
+body {
+  background: #569fc6 url("images/bg_home_bseidel.png") no-repeat fixed 100% 100%;
+  padding-top: 20px;
+}
+
+.navbar-default {
+  background: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #00567d;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  background-color: transparent;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: #74B0CF;
+  color: #fff;
+}
+
+/* CV */
+.bs-cv h4 {
+  text-transform: uppercase;
+}
+
+.bs-cv .topic {
+  font-weight: bold;
+}
+
+.bs-cv .topic .desc {
+  font-weight: normal;
+}
+
+.bs-cv .add-margin-bottom {
+  margin-bottom: .5em;
+}
